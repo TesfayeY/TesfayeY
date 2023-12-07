@@ -15,12 +15,11 @@
 <div align="center" >
 <img src="https://komarev.com/ghpvc/?username=TesfayeY&style=flat-square&color=blue" alt="" />
 <h1>
+  
   hey there
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
 </h1>
 </div>
-
-
 
 
 <div align="center">
@@ -30,13 +29,13 @@
 
 ### :man_technologist: About Me :
 I am a Computer Science Student and Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
-- :telescope: I’m working as a developer and contributing to frontend and backend for building web applications.
+- :telescope: I’m working as a frontend and backend developer, building web applications.
 
-- :seedling: Exploring Technical Content Writing.
+- :seedling: Exploring the impact of Quantum Computing in Fintech and education.
 
-- :zap: In my free time, I solve problems on Ha and read tech articles.
-
-- :mailbox:How to reach me: [![Linkedin Badge](https://img.shields.io/badge/-kakbar-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/tesfaye-kefene-24106828a/)
+- :zap: Part-time Coffee lover, Physicist and Dog whisperer🤡
+  
+- :mailbox: Click here to reach out: [![Linkedin Badge](https://img.shields.io/badge/-kakbar-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/tesfaye-kefene-24106828a/)
 ---
 
 ### :hammer_and_wrench: Languages and Tools :
