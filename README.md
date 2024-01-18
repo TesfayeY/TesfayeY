@@ -48,11 +48,5 @@ I am a Computer Science Student and Developer <img src="https://media.giphy.com/
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="50" height="50"/>
 </div>
 
----
 
-### :fire: My Stats :
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=TesfayeY&theme=tokyonight&date_format=%5BY.%5Dn.j&exclude_days=Sun%2CSat)](https://git.io/streak-stats)
----
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TesfayeY&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
----
 
