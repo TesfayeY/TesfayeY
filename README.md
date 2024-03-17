@@ -9,15 +9,21 @@
 <h1>
 ---
 
-### :man_technologist: About Me :
-I am a Computer Science Student and Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
-- :telescope: I’m working as a frontend and backend developer, building web applications.
+ 
+### :man_technologist: A Little About Me :
+<div align="left">
+- :telescope: I am a Computer Science Student and Developer 
+  
+- I’m currently working on Android development in Kotlin <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
 
-- :seedling: Exploring the impact of Quantum Computing in Fintech.
+- :seedling: Forging a path in Quantum Computing and its impact in Fintech.
 
-- :zap: Part-time Coffee lover, Physicist and Dog whisperer🤡
+- :zap: Part-time Coffee lover, Physicist, and Dog whisperer🤡
   
 - :mailbox: Click here to reach out: [![Linkedin Badge](https://img.shields.io/badge/-kakbar-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/tesfaye-kefene-7a406928a/)
+
+</div>
+
 ---
 
 ### :hammer_and_wrench: Languages and Tools :
