@@ -7,23 +7,13 @@
 <div align="center" >
 <img src="https://komarev.com/ghpvc/?username=TesfayeY&style=flat-square&color=blue" alt="" />
 <h1>
-  
-  Hey there
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
-</h1>
-</div>
-
-
-<div align="center">
-  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
-</div>
 ---
 
 ### :man_technologist: About Me :
 I am a Computer Science Student and Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
 - :telescope: I’m working as a frontend and backend developer, building web applications.
 
-- :seedling: Exploring the impact of Quantum Computing in Fintech and education.
+- :seedling: Exploring the impact of Quantum Computing in Fintech.
 
 - :zap: Part-time Coffee lover, Physicist and Dog whisperer🤡
   
