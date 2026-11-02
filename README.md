@@ -12,11 +12,9 @@
  
 ### :man_technologist: A Little About Me :
 <div align="left">
-- :telescope: I am a Computer Science Student and Developer 
-  
-- I’m currently working on Android development in Kotlin <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+- :telescope: I am a Computer Science Student and Developer at Fisk and Vanderbilt.
 
-- :seedling: Forging a path in Quantum Computing and its impact in Fintech.
+- :seedling: Forging a path in Quantum Computing.
 
 - :zap: Part-time Coffee lover, Physicist, and Dog whisperer🤡
   
