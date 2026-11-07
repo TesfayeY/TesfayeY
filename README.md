@@ -1,13 +1,13 @@
+<img src="./assets/header.svg" width="100%" alt="Tesfaye Kefene: Computer Science, Fisk and Vanderbilt"/>
+
 <div align="center">
 
-# Hi, I'm Tesfaye 👋
+<img src="./assets/typing.svg" alt="Computer Science at Fisk and Vanderbilt. Exploring quantum computing with QAOA. Building full-stack and mobile apps. Machine-learning web security."/>
 
 <a href="https://www.linkedin.com/in/tesfaye-kefene-7a406928a/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://tesfayey.github.io/Personal-Portfolio-Website/"><img src="https://img.shields.io/badge/Portfolio-24292F?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"/></a>
 
 </div>
-
----
 
 ### :man_technologist: About me
 
@@ -45,3 +45,34 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg" title="AWS" alt="AWS" width="40" height="40"/>&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" title="Git" alt="Git" width="40" height="40"/>
 </p>
+
+### :bar_chart: GitHub stats
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg"/>
+    <img src="./assets/stats-light.svg" alt="Tesfaye's GitHub stats" height="170"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/top-langs-dark.svg"/>
+    <img src="./assets/top-langs-light.svg" alt="Most used languages" height="170"/>
+  </picture>
+</div>
+
+### :snake: Contribution activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg"/>
+  <img src="./assets/snake-light.svg" alt="Snake animation eating the contribution graph" width="100%"/>
+</picture>
+
+<img src="./assets/footer.svg" width="100%" alt=""/>
+
+<!--
+  Stats cards and the snake are regenerated daily by .github/workflows/profile-graphics.yml.
+  The header, typing line, and footer are static copies; to change them, edit the URL, re-download, and replace the file in assets/:
+  header: https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0A66C2,100:7F5AF0&text=Tesfaye%20Kefene&fontColor=ffffff&fontSize=56&fontAlignY=36&desc=Computer%20Science%20%C2%B7%20Fisk%20and%20Vanderbilt&descSize=20&descAlignY=58&animation=fadeIn
+  typing: https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=620&height=50&lines=Computer+Science+at+Fisk+and+Vanderbilt;Exploring+quantum+computing+with+QAOA;Building+full-stack+and+mobile+apps;Machine-learning+web+security
+  footer: https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:0A66C2,100:7F5AF0
+  Avoid a raw "&" in the text: capsule-render doesn't escape it and the SVG breaks.
+-->
