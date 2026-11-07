@@ -1,0 +1,92 @@
+# Regenerates the stats cards and contribution snake used in README.md.
+# The cards are built here and committed to assets/, so the profile never
+# depends on a public card server staying online.
+name: Update profile graphics
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/profile-graphics.yml
+
+permissions:
+  contents: write      # commit the generated SVGs
+  pull-requests: read  # stats card counts PRs
+  issues: read         # stats card counts issues
+
+concurrency:
+  group: profile-graphics
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      USER_NAME: ${{ github.repository_owner }}
+      # HTML/CSS are hidden because generated files in WebWall would otherwise dominate the chart.
+      LANGS: layout=compact&langs_count=8&hide=html,css,scss&hide_border=true
+      STATS: show_icons=true&hide_border=true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stats card (light)
+        uses: readme-tools/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ env.USER_NAME }}&${{ env.STATS }}
+          path: assets/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Stats card (dark)
+        uses: readme-tools/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ env.USER_NAME }}&${{ env.STATS }}&theme=github_dark
+          path: assets/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages (light)
+        uses: readme-tools/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ env.USER_NAME }}&${{ env.LANGS }}
+          path: assets/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages (dark)
+        uses: readme-tools/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ env.USER_NAME }}&${{ env.LANGS }}&theme=github_dark
+          path: assets/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ env.USER_NAME }}
+          outputs: |
+            assets/snake-light.svg
+            assets/snake-dark.svg?palette=github-dark
+
+      - name: Refuse to commit error cards
+        run: |
+          if grep -lE "Something went wrong|not accessible|rate limit|Could not" assets/stats-*.svg assets/top-langs-*.svg; then
+            echo "::error::A card was generated with an error message; keeping the previous version."
+            exit 1
+          fi
+
+      - name: Commit updated graphics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git diff --cached --quiet && exit 0
+          git commit -m "Update profile graphics"
+          git push
