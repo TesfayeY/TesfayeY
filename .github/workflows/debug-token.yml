@@ -1,0 +1,20 @@
+name: debug-token (temporary)
+on:
+  push:
+    branches: [profile-graphics]
+    paths: [.github/workflows/debug-token.yml]
+permissions:
+  contents: read
+  pull-requests: read
+  issues: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - run: |
+          for f in "name" "contributionsCollection { totalCommitContributions }" "contributionsCollection { totalPullRequestReviewContributions }" "repositoriesContributedTo(first:1, contributionTypes:[COMMIT,ISSUE,PULL_REQUEST,REPOSITORY]) { totalCount }" "pullRequests(first:1) { totalCount }" "openIssues: issues(states: OPEN) { totalCount }" "closedIssues: issues(states: CLOSED) { totalCount }" "followers { totalCount }" "repositories(first:1, ownerAffiliations: OWNER) { totalCount }" "contributionsCollection { contributionCalendar { totalContributions } }"; do
+            out=$(gh api graphql -f query="{ user(login:\"TesfayeY\") { $f } }" 2>&1 | tr -d '\n' | head -c 160)
+            echo "FIELD [$f] => $out"
+          done
