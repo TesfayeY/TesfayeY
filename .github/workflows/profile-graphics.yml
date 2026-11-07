@@ -12,7 +12,9 @@ on:
       - .github/workflows/profile-graphics.yml
 
 permissions:
-  contents: write
+  contents: write      # commit the generated SVGs
+  pull-requests: read  # stats card counts PRs
+  issues: read         # stats card counts issues
 
 concurrency:
   group: profile-graphics
