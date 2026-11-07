@@ -32,36 +32,40 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Stats card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: stats
           options: username=${{ env.USER_NAME }}&${{ env.STATS }}
           path: assets/stats-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Stats card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: stats
           options: username=${{ env.USER_NAME }}&${{ env.STATS }}&theme=github_dark
           path: assets/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Top languages (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: top-langs
           options: username=${{ env.USER_NAME }}&${{ env.LANGS }}
           path: assets/top-langs-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Top languages (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: top-langs
           options: username=${{ env.USER_NAME }}&${{ env.LANGS }}&theme=github_dark
           path: assets/top-langs-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Contribution snake
         uses: Platane/snk/svg-only@v3
